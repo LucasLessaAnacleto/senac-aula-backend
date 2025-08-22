@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "48317772-1371-4cc6-a128-81e84f92794e",
+		"name": "atividade-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45820072",
+		"_collection_link": "https://lucassenac.postman.co/workspace/Lucas-Senac's-Workspace~e98bf4a8-ebf5-4d86-87f4-ca2ed756266e/collection/45820072-48317772-1371-4cc6-a128-81e84f92794e?action=share&source=collection_link&creator=45820072"
+	},
+	"item": [
+		{
+			"name": "Criar carro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"modelo\": \"Mini Dolphin\",\r\n    \"marca\": \"Byd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/carro/adicionar-carro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carro",
+						"adicionar-carro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar carros",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"modelo\": \"Seal\",\r\n    \"marca\": \"Byd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/carro/atualizar-carro/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carro",
+						"atualizar-carro",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar carros",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
